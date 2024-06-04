@@ -2445,10 +2445,13 @@
 			data_delay = areveal.getAttribute("data-delay");
 		}
 
-		areveal.split = new SplitText(areveal, {
-			type: "lines,words,chars",
-			linesClass: "tp-reveal-line"
-		});
+		if (window.innerWidth > 768) {
+      		areveal.split = new SplitText(areveal, {
+        	type: "lines,words,chars",
+        	linesClass: "tp-reveal-line",
+      	});
+    	}
+      
 
 		if (onscroll_value == 1) {
 			areveal.anim = gsap.from(areveal.split.chars, {
