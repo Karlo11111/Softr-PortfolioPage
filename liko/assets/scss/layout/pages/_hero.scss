@@ -314,7 +314,7 @@
             height: 480px;
             width: 460px;
             display: inline-block;
-            filter: blur(35px);
+            filter: blur(0px);
             border-radius: 62% 47% 82% 35%/45% 45% 80% 66%;
             background: linear-gradient(220deg, rgba(148, 254, 98, 0.50) 0.77%, rgba(255, 226, 122, 0.50) 55.40%, rgba(234, 94, 94, 0.50) 100%);
             @media #{$lg,$md}{
